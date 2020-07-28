@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dog API Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dog API: Assignment</h1>
+        <div class="form-section">
+            <form>
+                <input id="js-user-input" type="number" value="3" max="50" required>
+            </form>
+            <div>
+            <form id="dogs-logs">
+              <input type="submit" value="Get a dogs logs">
+                </form>
+            </div>
+            <div>
+                <form id="dogs-imgs">
+                  <input type="submit" value="Get a dogs pics">
+                </form>
+            </div>
+        </div>
+        <div class="form-section">
+            <form>
+                <input id="js-user-text" type="text" placeholder='Pick a breed, i.e. "hound"' required>
+            </form>
+            <form id="dog-breed">
+              <input type="submit" value="Get a breed pic">
+            </form>
+        </div>        
+        <section class="results hidden">        <!--  here dogs are breed  -->
+          <h2>Look at this dog!</h2>
+          <div id="picturesPlaceholder">
+            <img class="results-img" alt="placeholder">
+          </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
